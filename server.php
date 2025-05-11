@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$apiKey = 'c967519674ce89697951524aead85af8';
+$apiKey = '';
 
 if (!isset($_GET['title']) || empty($_GET['title'])) {
     echo json_encode(['error' => 'Не вказано назву фільму або серіалу']);
