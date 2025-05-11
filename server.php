@@ -22,7 +22,7 @@ $data = json_decode($response, true);
 if (isset($data['results']) && count($data['results']) > 0) {
     $movie = $data['results'][0];
 
-    // Формуємо результат
+    
     $posterPath = $movie['poster_path'] 
         ? "https://image.tmdb.org/t/p/w300{$movie['poster_path']}" 
         : 'https://dummyimage.com/300x450/cccccc/000000&text=No+Image';
